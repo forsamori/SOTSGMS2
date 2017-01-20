@@ -11,10 +11,14 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_growing.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_seagull</object>
     <object>objects\obj_pickup</object>
     <object>objects\obj_trash</object>
+    <object>objects\obj_view</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
