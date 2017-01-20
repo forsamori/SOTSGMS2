@@ -21,10 +21,18 @@ else
     obj_next_level_exp *= 2
     object_size += 1
     
-    
-    
     image_xscale = object_size
     image_yscale = object_size
+    
+    if(obj_view.exists)
+    {
+        obj_view.width *= 2
+        obj_view.height *= 2
+        
+        view_xport[0] = obj_view.width
+        view_yport[0] = obj_view.height
+    }
+    
     }   
 }
 

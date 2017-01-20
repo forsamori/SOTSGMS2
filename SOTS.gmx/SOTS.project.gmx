@@ -9,7 +9,9 @@
     <sprite>sprites\spr_seagull</sprite>
     <sprite>sprites\spr_trash</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_test_</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_growing.gml</script>
