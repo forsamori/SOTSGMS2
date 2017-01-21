@@ -32,6 +32,10 @@
       <script>scripts\scr_get_input.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\Test_Menu_Font</font>
+    <font>fonts\Test_Selection_Font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_seagull</object>
     <object>objects\obj_pickup</object>
@@ -44,6 +48,7 @@
     <object>objects\obj_explosion</object>
     <object>objects\obj_blood</object>
     <object>objects\obj_spawner</object>
+    <object>objects\obj_mainmenu_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
