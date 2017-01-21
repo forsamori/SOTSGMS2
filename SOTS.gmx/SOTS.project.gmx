@@ -21,7 +21,9 @@
   <backgrounds name="background">
     <background>background\bg_test_</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pth_hover</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="Seagull States">
       <script>scripts\scr_growing.gml</script>
@@ -65,6 +67,7 @@
       <object>objects\obj_ps</object>
     </objects>
     <object>objects\obj_black_out</object>
+    <object>objects\obj_highscore_board</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

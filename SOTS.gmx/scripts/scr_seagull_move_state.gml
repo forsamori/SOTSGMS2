@@ -9,26 +9,28 @@ scaleCounter = 0;
 obj_seagull.dir =  point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
 obj_seagull.pdist = point_distance( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
 
-//rotate seagull towards mouse position
+
 if(obj_seagull.pdist <= 30)
 {
     forward_speed = 0;
     hover_mode = true;
+    
 }
 else
 {
     hover_mode = false;
-    forward_speed = 5;
+    forward_speed = BASE_SPEED;
+    //rotates seagull towards mouse
     obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
+   
 }
 
+//Move forward
+move_towards_point(mouse_x,mouse_y,forward_speed);
 
-if (!hover_mode)
-{
-    //Move forward
-    move_towards_point(mouse_x,mouse_y,forward_speed);
-}
-
+//Follow hover path
+//path_start(pth_hover,3,path_action_restart,0);
+//obj_seagull.image_angle += 3;
 
 if(left_mouse_pressed && !obj_seagull.item_held)
 {
