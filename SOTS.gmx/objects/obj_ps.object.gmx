@@ -32,6 +32,8 @@ global.ps = part_system_create();
 //Init Blood
 scr_part_blood_init();
 
+//
+scr_part_eating_init();
 
 </string>
           </argument>
@@ -61,6 +63,10 @@ if(up_key)
 {
     part_particles_create(global.ps, mouse_x, mouse_y, global.pt_blood,10);
 }
+if(down_key)
+{
+    part_particles_create(global.ps, mouse_x, mouse_y, global.pt_eating,10);
+}
 </string>
           </argument>
         </arguments>
@@ -86,6 +92,7 @@ if(up_key)
             <string>
 // Destroys partical
 part_type_destroy(global.pt_blood);
+part_type_destroy(global.pt_eating);
 part_system_destroy(global.ps)
 
 </string>
