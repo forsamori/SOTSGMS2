@@ -28,11 +28,21 @@
             <string>///Initialize seagull
 //Speed = 9001, etc
 BASE_SPEED = 5;
+
 forward_speed = BASE_SPEED;
 swooping = false;
 drop = false;
 hover_mode = false;
 fly_mode = true;
+
+// Sam A - Growing Varibles;
+experience = 0
+next_level_exp = 10
+level = 1
+size = 1
+
+//
+state = scr_seagull_move_state
 </string>
           </argument>
         </arguments>

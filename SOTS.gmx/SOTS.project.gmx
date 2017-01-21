@@ -19,6 +19,11 @@
       <script>scripts\scr_seagull_eat_state.gml</script>
       <script>scripts\scr_seagull_move_state.gml</script>
       <script>scripts\scr_seagull_swooping_state.gml</script>
+      <script>scripts\scr_seagull_dropping_state.gml</script>
+    </scripts>
+    <scripts name="helper_scripts">
+      <script>scripts\scr_chance.gml</script>
+      <script>scripts\scr_get_input.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
