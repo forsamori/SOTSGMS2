@@ -26,16 +26,11 @@ else
 }
 
 //Move forward
- move_towards_point(mouse_x,mouse_y,forward_speed);
-
+move_towards_point(mouse_x,mouse_y,forward_speed);
 
 //Follow hover path
 //path_start(pth_hover,3,path_action_restart,0);
 //obj_seagull.image_angle += 3;
-    
-
-
-
 
 if(left_mouse_pressed && !obj_seagull.item_held)
 {

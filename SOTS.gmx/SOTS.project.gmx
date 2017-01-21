@@ -6,7 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_seagull</sprite>
+    <sprite>sprites\spr_seagull_00</sprite>
+    <sprite>sprites\spr_seagull_01</sprite>
     <sprite>sprites\spr_trash</sprite>
     <sprite>sprites\spr_pedestrian</sprite>
     <sprite>sprites\spr_car</sprite>
@@ -14,6 +15,8 @@
     <sprite>sprites\spr_tanker</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_blood</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\spr_black_out</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -28,6 +31,7 @@
       <script>scripts\scr_seagull_move_state.gml</script>
       <script>scripts\scr_seagull_swooping_state.gml</script>
       <script>scripts\scr_seagull_dropping_state.gml</script>
+      <script>scripts\scr_seagull_evolving_state.gml</script>
     </scripts>
     <scripts name="helper_scripts">
       <script>scripts\scr_chance.gml</script>
@@ -37,13 +41,14 @@
       <script>scripts\scr_part_blood_init.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\Evolution_Shader.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>
     <font>fonts\Test_Selection_Font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_seagull</object>
-    <object>objects\obj_pickup</object>
     <object>objects\obj_trash</object>
     <object>objects\obj_view</object>
     <object>objects\obj_spawner</object>
@@ -59,10 +64,10 @@
       <object>objects\obj_blood</object>
       <object>objects\obj_ps</object>
     </objects>
+    <object>objects\obj_black_out</object>
+    <object>objects\obj_highscore_board</object>
   </objects>
-  <rooms name="rooms">
-    <room>rooms\room0</room>
-  </rooms>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
