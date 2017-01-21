@@ -69,6 +69,7 @@ if (pickedUp == true)
     image_angle = obj_seagull.dir;
     x = obj_seagull.x;
     y = obj_seagull.y;
+    show_debug_message("pickedup = true");
     image_xscale = obj_seagull.image_xscale * 2;
     image_yscale = obj_seagull.image_yscale * 2;
 }
@@ -79,6 +80,7 @@ if (obj_seagull.drop == true)
     falling = true;
     pickedUp = false;
     obj_seagull.drop = false
+    show_debug_message("Dropping item");
 }
 
 if (falling == true)
@@ -121,6 +123,7 @@ if (obj_seagull.swooping == true &amp;&amp; !obj_seagull.item_held)
     pickedUp = true;
     other.item_held = true;
     other.held_item = self;
+    show_debug_message("Picked up item");
 }
 </string>
           </argument>

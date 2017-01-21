@@ -4,13 +4,10 @@ if(instance_exists(obj_seagull.held_item))
     with(obj_seagull.held_item)
     {
         pickedUp = false;
-        
-        
-        
-        
-        //instance_destroy()
+        //instance_destroy();
     }
 }
 obj_seagull.drop = true;
 obj_seagull.item_held = false;
-state = scr_seagull_move_state;
+obj_seagull.held_item = noone;
+obj_seagull.state = scr_seagull_move_state;

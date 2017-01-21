@@ -115,7 +115,7 @@ state = scr_seagull_move_state;
 drop = false;
 swooping = false;
 forward_speed = BASE_SPEED;
-state = scr_seagull_move_state;
+obj_seagull.state = scr_seagull_move_state;
 </string>
           </argument>
         </arguments>
@@ -139,7 +139,7 @@ state = scr_seagull_move_state;
           <argument>
             <kind>1</kind>
             <string>///Seagull Movement
-script_execute(state);
+script_execute(self.state);
 
 //image_angle = point_direction(x, y, mouse_x, mouse_y);
 
@@ -153,8 +153,6 @@ script_execute(state);
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="5" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -171,8 +169,9 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///debug
+	show_debug_message("obj_seagull.item_held = " + string(item_held));
             <string>/// pickup_Update
-
 // Move with the seagull.
 if (pickedUp == true)
 {
@@ -208,7 +207,7 @@ if (falling == true)
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="5" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -225,6 +224,16 @@ if (falling == true)
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>if(obj_seagull.hover_mode)
+{
+    obj_seagull.hover_mode = false;
+}
+else
+{
+    obj_seagull.hover_mode = true;
+}
+
+show_debug_message(forward_speed);
             <string>/// obj_pickup Init
 eatable = true;
 weight = 2;

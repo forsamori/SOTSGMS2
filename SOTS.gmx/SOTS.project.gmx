@@ -53,8 +53,6 @@
     <font>fonts\Test_Selection_Font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_seagull</object>
-    <object>objects\obj_pickup</object>
     <object>objects\obj_trash</object>
     <object>objects\obj_view</object>
     <object>objects\obj_spawner</object>
@@ -79,12 +77,16 @@
       <object>objects\obj_help_button</object>
     </objects>
   </objects>
+
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
     <room>rooms\rm_help_screen</room>
     <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
   </rooms>
+
+ 
+
   <help>
     <rtf>help.rtf</rtf>
   </help>
