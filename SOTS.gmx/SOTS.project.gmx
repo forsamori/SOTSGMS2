@@ -20,6 +20,7 @@
     <sprite>sprites\spr_black_out</sprite>
     <sprite>sprites\spr_seagull_00</sprite>
     <sprite>sprites\spr_seagull_01</sprite>
+    <sprite>sprites\sprite12</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>

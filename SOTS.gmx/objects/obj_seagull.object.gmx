@@ -43,6 +43,12 @@ next_level_exp = 10
 level = 1
 size = 1
 
+evolving = false;
+evo_alpha = 0.0
+evo_hzoom = 0.0
+evo_vzoom = 0.0
+evo_dir = 0.0
+
 var dir = 0.0
 
 held_item = noone;

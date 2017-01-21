@@ -15,6 +15,8 @@ if(!obj_seagull.evolving)
     
     move_towards_point(mouse_x, mouse_y, 0.0);
     
+    obj_seagull.image_speed = 0;
+    
 }
 
 
@@ -43,13 +45,14 @@ if(alarm_get(1) <= room_speed*7)
     switch(obj_seagull.level)
     {
         case 2:
-            obj_seagull.sprite_index = spr_seagull_01;
+            obj_seagull.image_index = 1;
+            break;
+        case 3:
+            obj_seagull.image_index = 2;
             break;
         default:
-            obj_seagull.sprite_index = spr_seagull_00;
+            obj_seagull.image_index = 0;
             break;
-        
-            
     }
     
 }
@@ -58,8 +61,8 @@ if(alarm_get(1) <= room_speed*7)
 
 if(alarm_get(1) <= room_speed*2)
 {
-    obj_seagull.image_xscale += 1/(2*room_speed);
-    obj_seagull.image_yscale += 1/(2*room_speed);
+    obj_seagull.image_xscale += 1/(room_speed);
+    obj_seagull.image_yscale += 1/(room_speed);
     
     view_hview[0] += (2*evo_vzoom)
     view_wview[0] += (2*evo_hzoom)
@@ -73,7 +76,7 @@ if(alarm_get(1) <= room_speed*1)
 
 if(alarm_get(1) <= 0)
 {
-    
+    obj_black_out.evolving = 0
     state = scr_seagull_move_state;
 }
 // Resume
