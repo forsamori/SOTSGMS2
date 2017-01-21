@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>button_text = "Start Game";
+            <string>event_inherited();
+button_text = "Start Game";
 button_action = scr_start_game;
 </string>
           </argument>

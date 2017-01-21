@@ -14,7 +14,9 @@
     <sprite>sprites\spr_tanker</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_blood</sprite>
-    <sprite>sprites\spr_button</sprite>
+    <sprites name="Buttons">
+      <sprite>sprites\spr_button</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -41,6 +43,9 @@
     <scripts name="Buttons">
       <script>scripts\scr_exit_game.gml</script>
       <script>scripts\scr_start_game.gml</script>
+      <script>scripts\scr_help_screen.gml</script>
+      <script>scripts\scr_home_screen.gml</script>
+      <script>scripts\scr_credits.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -68,11 +73,16 @@
     <objects name="Buttons">
       <object>objects\obj_button_parent</object>
       <object>objects\obj_start_button</object>
+      <object>objects\obj_home_button</object>
+      <object>objects\obj_button_credits</object>
       <object>objects\obj_exit_button</object>
+      <object>objects\obj_help_button</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
+    <room>rooms\rm_help_screen</room>
+    <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
