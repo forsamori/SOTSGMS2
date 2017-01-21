@@ -26,6 +26,8 @@
   <backgrounds name="background">
     <background>background\bg_test_</background>
     <background>background\bg_start_screen</background>
+    <background>background\background2</background>
+    <background>background\bg_water_tileset</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
@@ -46,6 +48,9 @@
     <scripts name="particals">
       <script>scripts\scr_part_blood_init.gml</script>
       <script>scripts\scr_part_eating_init.gml</script>
+      <scripts name="Play">
+        <script>scripts\scr_part_blood_play.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Buttons">
       <script>scripts\scr_exit_game.gml</script>

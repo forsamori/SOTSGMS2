@@ -13,16 +13,23 @@ obj_seagull.pdist = point_distance( obj_seagull.x,  obj_seagull.y, mouse_x, mous
 if(obj_seagull.pdist <= 30)
 {
     forward_speed = 0;
-    hover_mode = true;
+    //hover_mode = true;
+    //fly_mode = false;
+
+    //path_start(pth_hover,3,path_action_restart,false);
+   // obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, path_position.x,path_position.y);
+    show_debug_message(path_position);
     
 }
 else
 {
-    hover_mode = false;
+    //hover_mode = false;
+    //fly_mode = true;
+    
     forward_speed = BASE_SPEED;
     //rotates seagull towards mouse
     obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
-   
+    //path_end();
 }
 
 //Move forward
