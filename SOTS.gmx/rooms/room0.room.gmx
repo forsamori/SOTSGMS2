@@ -58,7 +58,6 @@
     <instance objName="obj_car" x="160" y="128" name="inst_50E8BF7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pedestrian" x="352" y="96" name="inst_2EC5C708" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trash" x="160" y="416" name="inst_78312486" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="640" y="96" name="inst_E5B64C3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seagull" x="512" y="416" name="inst_F5E8FD55" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

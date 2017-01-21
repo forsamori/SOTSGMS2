@@ -54,6 +54,7 @@
     <font>fonts\Test_Selection_Font</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_seagull</object>
     <object>objects\obj_trash</object>
     <object>objects\obj_view</object>
     <object>objects\obj_spawner</object>
@@ -63,6 +64,7 @@
       <object>objects\obj_car</object>
       <object>objects\obj_boat</object>
       <object>objects\obj_tanker</object>
+      <object>objects\obj_pickup</object>
     </objects>
     <objects name="Particals">
       <object>objects\obj_explosion</object>
@@ -77,7 +79,6 @@
       <object>objects\obj_exit_button</object>
       <object>objects\obj_help_button</object>
     </objects>
-    <object>objects\obj_seagull</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
