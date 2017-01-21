@@ -49,7 +49,6 @@
       <script>scripts\scr_credits.gml</script>
     </scripts>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>
     <font>fonts\Test_Selection_Font</font>
