@@ -29,6 +29,7 @@
 eatable = true;
 weight = 2;
 pickedUp = false;
+dropped = false;
 </string>
           </argument>
         </arguments>
@@ -66,6 +67,7 @@ if (obj_seagull.drop == true)
 {
     pickedUp = false;
     obj_seagull.drop = false
+    
 }
 </string>
           </argument>
