@@ -14,9 +14,11 @@
     <sprite>sprites\spr_tanker</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_blood</sprite>
+    <sprite>sprites\spr_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
+    <background>background\bg_start_screen</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
@@ -35,6 +37,10 @@
     </scripts>
     <scripts name="particals">
       <script>scripts\scr_part_blood_init.gml</script>
+    </scripts>
+    <scripts name="Buttons">
+      <script>scripts\scr_exit_game.gml</script>
+      <script>scripts\scr_start_game.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -59,8 +65,14 @@
       <object>objects\obj_blood</object>
       <object>objects\obj_ps</object>
     </objects>
+    <objects name="Buttons">
+      <object>objects\obj_button_parent</object>
+      <object>objects\obj_start_button</object>
+      <object>objects\obj_exit_button</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start_screen</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
