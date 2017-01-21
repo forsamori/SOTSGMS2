@@ -2,6 +2,8 @@
 
 obj_seagull.experience += obj_seagull.held_item.weight
 
+Evo = false;
+
 obj_seagull.drop = true;
 obj_seagull.item_held = false;
 if (obj_seagull.experience >= obj_seagull.next_level_exp)
@@ -10,7 +12,7 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
     obj_seagull.next_level_exp *= 2
     obj_seagull.level += 1
     
-    obj_seagull.evolving = true;
+    Evo = true;
 }
 
 
@@ -25,7 +27,7 @@ if(instance_exists(obj_seagull.held_item))
 obj_seagull.held_item = noone;
 //obj_seagull.swooping = false;
 
-if(obj_seagull.evolving)
+if(Evo)
 {
     state = scr_seagull_evolving_state;
 }
