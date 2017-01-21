@@ -49,6 +49,7 @@
       <script>scripts\scr_credits.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders"/>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>
     <font>fonts\Test_Selection_Font</font>
@@ -78,16 +79,12 @@
       <object>objects\obj_help_button</object>
     </objects>
   </objects>
-
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
     <room>rooms\rm_help_screen</room>
     <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
   </rooms>
-
- 
-
   <help>
     <rtf>help.rtf</rtf>
   </help>
