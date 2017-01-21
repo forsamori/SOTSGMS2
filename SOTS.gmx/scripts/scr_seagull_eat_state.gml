@@ -59,7 +59,7 @@ if(instance_exists(obj_seagull.held_item))
 with(obj_seagull.held_item)
     {
         pickedUp = false;
-        //instance_destroy();
+        instance_destroy();
     }
 }
 obj_seagull.held_item = noone;
