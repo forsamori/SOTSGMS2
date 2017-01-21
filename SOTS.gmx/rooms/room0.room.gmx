@@ -60,6 +60,7 @@
     <instance objName="obj_trash" x="160" y="416" name="inst_78312486" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_seagull" x="512" y="416" name="inst_F5E8FD55" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_black_out" x="0" y="224" name="inst_584EFF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_highscore_board" x="544" y="128" name="inst_EFE0F9BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_water_tileset" x="288" y="544" w="32" h="32" xo="32" yo="32" id="10000001" name="inst_DBC98FA6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
