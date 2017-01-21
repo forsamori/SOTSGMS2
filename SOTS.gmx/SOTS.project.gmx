@@ -102,6 +102,7 @@
     <room>rooms\rm_help_screen</room>
     <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_enter_name</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
