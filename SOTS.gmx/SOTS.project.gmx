@@ -45,6 +45,9 @@
     <scripts name="particals">
       <script>scripts\scr_part_blood_init.gml</script>
       <script>scripts\scr_part_eating_init.gml</script>
+      <scripts name="Play">
+        <script>scripts\scr_part_blood_play.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Buttons">
       <script>scripts\scr_exit_game.gml</script>
