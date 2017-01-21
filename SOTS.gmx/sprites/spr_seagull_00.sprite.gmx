@@ -20,6 +20,6 @@
   <width>256</width>
   <height>256</height>
   <frames>
-    <frame index="0">images\spr_seagull_0.png</frame>
+    <frame index="0">images\spr_seagull_00_0.png</frame>
   </frames>
 </sprite>

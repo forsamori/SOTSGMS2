@@ -37,6 +37,8 @@ falling = false;
 scaleVal = 0;
 initialScaleX = image_xscale;
 initialScaleY = image_yscale;
+
+points = 0;
 </string>
           </argument>
         </arguments>
