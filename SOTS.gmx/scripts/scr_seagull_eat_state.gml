@@ -24,4 +24,4 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
 
 }
 
-state = scr_seagull_move_state;
+state = scr_seagull_dropping_state;
