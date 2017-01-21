@@ -31,6 +31,7 @@
     <object>objects\obj_pickup</object>
     <object>objects\obj_trash</object>
     <object>objects\obj_view</object>
+    <object>objects\obj_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
