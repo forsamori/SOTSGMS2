@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// obj_pickup Init
+eatable = true;
+weight = 2;
 pickedUp = false;
 </string>
           </argument>
@@ -49,11 +51,12 @@ pickedUp = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Trash Update
+            <string>/// pickup_Update
 
 // Move with the seagull.
 if (pickedUp == true)
 {
+    image_angle = obj_seagull.dir;
     x = obj_seagull.x;
     y = obj_seagull.y;
 }
@@ -90,6 +93,8 @@ if (obj_seagull.drop == true)
 if (obj_seagull.swooping == true)
 {
     pickedUp = true;
+    other.item_held = true;
+    other.held_item = self;
 }
 </string>
           </argument>
