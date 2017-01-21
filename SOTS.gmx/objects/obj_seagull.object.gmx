@@ -55,7 +55,7 @@ fly_mode = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///Seagull Movement
 //rotate seagull towards mouse position
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 
@@ -89,7 +89,7 @@ if (fly_mode)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/// Seagull Hover
 if(fly_mode)
 {
     hover_mode = true;
@@ -117,7 +117,8 @@ if(fly_mode)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (swooping == false)
+            <string>/// Swooping
+if (swooping == false)
 {
     swooping = true;
 }

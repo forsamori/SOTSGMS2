@@ -14,7 +14,12 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_growing.gml</script>
+    <scripts name="Seagull States">
+      <script>scripts\scr_growing.gml</script>
+      <script>scripts\scr_seagull_eat_state.gml</script>
+      <script>scripts\scr_seagull_move_state.gml</script>
+      <script>scripts\scr_seagull_swooping_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_seagull</object>

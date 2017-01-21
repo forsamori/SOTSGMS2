@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pickedUp = false;
+            <string>/// obj_pickup Init
+pickedUp = false;
 </string>
           </argument>
         </arguments>
@@ -48,12 +49,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (pickedUp == true)
+            <string>/// Trash Update
+
+// Move with the seagull.
+if (pickedUp == true)
 {
     x = obj_seagull.x;
     y = obj_seagull.y;
 }
 
+// If the segul is dropping then set picked up bool false.
 if (obj_seagull.drop == true)
 {
     pickedUp = false;
@@ -81,7 +86,8 @@ if (obj_seagull.drop == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_seagull.swooping == true)
+            <string>// Colloision With Seagull while swooping
+if (obj_seagull.swooping == true)
 {
     pickedUp = true;
 }
