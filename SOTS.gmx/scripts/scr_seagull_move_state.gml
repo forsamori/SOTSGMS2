@@ -30,15 +30,15 @@ if (!hover_mode)
 }
 
 
-if(left_mouse_pressed && !item_held)
+if(left_mouse_pressed && !obj_seagull.item_held)
 {
     state = scr_seagull_swooping_state
 }
-else if(left_mouse_pressed && item_held)
+else if(left_mouse_pressed && obj_seagull.item_held)
 {
     state = scr_seagull_dropping_state
 }
-else if(right_mouse_pressed && item_held && held_item.eatable)
+else if(right_mouse_pressed && obj_seagull.item_held && obj_seagull.held_item.eatable)
 {
     state = scr_seagull_eat_state
 }
