@@ -30,6 +30,13 @@ eatable = true;
 weight = 2;
 pickedUp = false;
 dropped = false;
+
+//some new code to time the fall
+fallCounter = 0;
+falling = false;
+scaleVal = 0;
+initialScaleX = image_xscale;
+initialScaleY = image_yscale;
 </string>
           </argument>
         </arguments>
@@ -60,14 +67,29 @@ if (pickedUp == true)
     image_angle = obj_seagull.dir;
     x = obj_seagull.x;
     y = obj_seagull.y;
+    image_xscale = obj_seagull.image_xscale * 2;
+    image_yscale = obj_seagull.image_yscale * 2;
 }
 
 // If the segul is dropping then set picked up bool false.
 if (obj_seagull.drop == true)
 {
+    falling = true;
     pickedUp = false;
     obj_seagull.drop = false
-    
+}
+
+if (falling == true)
+{
+    scaleVal = ((-1 / 10) * fallCounter) + 2;
+    image_xscale = initialScaleX * scaleVal;
+    image_yscale = initialScaleY * scaleVal;
+    fallCounter++;
+    if (fallCounter &gt;= 10)
+    {
+        fallCounter = 0;
+        falling = false;
+    }
 }
 </string>
           </argument>

@@ -22,13 +22,8 @@ else
     obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
 }
 
-
-if (!hover_mode)
-{
     //Move forward
     move_towards_point(mouse_x,mouse_y,forward_speed);
-}
-
 
 if(left_mouse_pressed && !obj_seagull.item_held)
 {
