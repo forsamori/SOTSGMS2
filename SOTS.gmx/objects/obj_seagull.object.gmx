@@ -55,6 +55,9 @@ state = scr_seagull_move_state
 scaleCounter = 0;
 initialScaleX = obj_seagull.image_xscale;
 initialScaleY = obj_seagull.image_yscale;
+
+//variables for score
+score = 0;
 </string>
           </argument>
         </arguments>
@@ -137,16 +140,38 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_seagull.hover_mode)
+            <string>/// pickup_Update
+
+// Move with the seagull.
+if (pickedUp == true)
 {
-    obj_seagull.hover_mode = false;
-}
-else
-{
-    obj_seagull.hover_mode = true;
+    image_angle = obj_seagull.dir;
+    x = obj_seagull.x;
+    y = obj_seagull.y;
+    image_xscale = obj_seagull.image_xscale * 2;
+    image_yscale = obj_seagull.image_yscale * 2;
 }
 
-show_debug_message(forward_speed);
+// If the segul is dropping then set picked up bool false.
+if (obj_seagull.drop == true)
+{
+    falling = true;
+    pickedUp = false;
+    obj_seagull.drop = false
+}
+
+if (falling == true)
+{
+    scaleVal = ((-1 / 10) * fallCounter) + 2;
+    image_xscale = initialScaleX * scaleVal;
+    image_yscale = initialScaleY * scaleVal;
+    fallCounter++;
+    if (fallCounter &gt;= 10)
+    {
+        fallCounter = 0;
+        falling = false;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -169,16 +194,18 @@ show_debug_message(forward_speed);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Swooping
-//if (swooping == false)
-//{
-//    swooping = true;
-//}
-//else if (swooping == true)
-//{
-//    drop = true;
-//    swooping = false;
-//}
+            <string>/// obj_pickup Init
+eatable = true;
+weight = 2;
+pickedUp = false;
+dropped = false;
+
+//some new code to time the fall
+fallCounter = 0;
+falling = false;
+scaleVal = 0;
+initialScaleX = image_xscale;
+initialScaleY = image_yscale;
 </string>
           </argument>
         </arguments>

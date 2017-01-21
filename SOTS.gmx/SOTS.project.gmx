@@ -59,6 +59,7 @@
       <object>objects\obj_blood</object>
       <object>objects\obj_ps</object>
     </objects>
+    <object>objects\obj_highscore_board</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
