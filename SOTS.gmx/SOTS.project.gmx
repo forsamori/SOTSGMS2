@@ -18,7 +18,9 @@
   <backgrounds name="background">
     <background>background\bg_test_</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pth_hover</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="Seagull States">
       <script>scripts\scr_growing.gml</script>
