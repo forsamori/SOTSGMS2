@@ -137,17 +137,16 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Seagull Hover
-if(!hover_mode)
+            <string>if(obj_seagull.hover_mode)
 {
-    hover_mode = true;
-    forward_speed = 0;
+    obj_seagull.hover_mode = false;
 }
 else
 {
-    hover_mode = false;
-    forward_speed = 5;
+    obj_seagull.hover_mode = true;
 }
+
+show_debug_message(forward_speed);
 </string>
           </argument>
         </arguments>
