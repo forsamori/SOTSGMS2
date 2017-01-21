@@ -21,6 +21,7 @@
     <sprite>sprites\spr_seagull_00</sprite>
     <sprite>sprites\spr_seagull_01</sprite>
     <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\spr_shrapnel</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -89,6 +90,7 @@
     </objects>
     <object>objects\obj_black_out</object>
     <object>objects\obj_highscore_board</object>
+    <object>objects\obj_shrapnel</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>

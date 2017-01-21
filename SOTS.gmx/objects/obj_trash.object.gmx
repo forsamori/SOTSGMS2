@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_seagull.multiplier_triggered = true;
+            <string>event_inherited();
+
+obj_seagull.multiplier_triggered = true;
 obj_seagull.counter = 1;
 
 obj_seagull.score += points*obj_seagull.multiplier;
