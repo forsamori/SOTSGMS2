@@ -87,6 +87,8 @@ score = 0;
           <argument>
             <kind>1</kind>
             <string>/// Hi
+self.evolving = false;
+state = scr_seagull_move_state;
 </string>
           </argument>
         </arguments>
@@ -270,18 +272,72 @@ initialScaleY = image_yscale;
 
 if (obj_seagull.evolving == true)
 {
-    if( (alarm[1] % 2) == 1)
+    if(alarm[1] &gt;= 7*room_speed)
     {
-    
-    shader_set(Evolution_Shader);
-    draw_self();
-    shader_reset();
+        if( (alarm[1] % 30) &lt;= 15)
+        {
+            shader_set(Evolution_Shader);
+            draw_self();
+            shader_reset();
+        }
+        else
+        {
+            draw_self();
+        }
     }
-    else
+    else if(alarm[1] &gt;= 6*room_speed)
     {
-    
-    draw_self();
+        if( (alarm[1] % 20) &lt;= 10)
+        {
+            shader_set(Evolution_Shader);
+            draw_self();
+            shader_reset();
+        }
+        else
+        {
+            draw_self();
+        }
     }
+    else if(alarm[1] &gt;= 5*room_speed)
+    {
+        if( (alarm[1] % 10) &lt;= 5)
+        {
+            shader_set(Evolution_Shader);
+            draw_self();
+            shader_reset();
+        }
+        else
+        {
+            draw_self();
+        }
+    }
+    else if(alarm[1] &gt;= 3*room_speed)
+    {
+        if( (alarm[1] % 20) &lt;= 10)
+        {
+            shader_set(Evolution_Shader);
+            draw_self();
+            shader_reset();
+        }
+        else
+        {
+            draw_self();
+        }
+    }
+    else if(alarm[1] &gt;= 0*room_speed)
+    {
+        if( (alarm[1] % 30) &lt;= 15)
+        {
+            shader_set(Evolution_Shader);
+            draw_self();
+            shader_reset();
+        }
+        else
+        {
+            draw_self();
+        }
+    }
+    
 }
 else
 {
