@@ -61,7 +61,33 @@
     <instance objName="obj_seagull" x="512" y="416" name="inst_F5E8FD55" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_black_out" x="0" y="224" name="inst_584EFF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="bg_water_tileset" x="288" y="544" w="32" h="32" xo="32" yo="32" id="10000001" name="inst_DBC98FA6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="320" y="544" w="32" h="32" xo="32" yo="32" id="10000002" name="inst_5481CA66" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="288" y="608" w="32" h="32" xo="32" yo="32" id="10000003" name="inst_1830B6D0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="288" y="576" w="32" h="32" xo="32" yo="32" id="10000004" name="inst_F82E5BF8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="320" y="576" w="32" h="32" xo="32" yo="32" id="10000005" name="inst_4CD3D28D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="320" y="608" w="32" h="32" xo="32" yo="32" id="10000006" name="inst_386251B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="352" y="608" w="32" h="32" xo="32" yo="32" id="10000007" name="inst_97B0F6C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="352" y="576" w="32" h="32" xo="32" yo="32" id="10000008" name="inst_12CED758" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="352" y="544" w="32" h="32" xo="32" yo="32" id="10000009" name="inst_548FEB60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="384" y="512" w="32" h="32" xo="64" yo="0" id="10000010" name="inst_77389AFF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="384" y="544" w="32" h="32" xo="64" yo="32" id="10000011" name="inst_186B9614" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="384" y="576" w="32" h="32" xo="64" yo="32" id="10000012" name="inst_5112D6B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="384" y="608" w="32" h="32" xo="64" yo="32" id="10000013" name="inst_A260FAA0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="384" y="640" w="32" h="32" xo="64" yo="64" id="10000014" name="inst_84833707" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="352" y="640" w="32" h="32" xo="32" yo="64" id="10000015" name="inst_8A6238A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="320" y="640" w="32" h="32" xo="32" yo="64" id="10000016" name="inst_391767F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="288" y="640" w="32" h="32" xo="32" yo="64" id="10000017" name="inst_0A37A301" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="256" y="640" w="32" h="32" xo="0" yo="64" id="10000018" name="inst_5FAAA5E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="256" y="608" w="32" h="32" xo="0" yo="32" id="10000019" name="inst_93DD94D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="256" y="576" w="32" h="32" xo="0" yo="32" id="10000020" name="inst_3A3AA57E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="256" y="544" w="32" h="32" xo="0" yo="32" id="10000021" name="inst_6222ECC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="256" y="512" w="32" h="32" xo="0" yo="0" id="10000022" name="inst_273BA2C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="288" y="512" w="32" h="32" xo="32" yo="0" id="10000023" name="inst_06FD279D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="320" y="512" w="32" h="32" xo="32" yo="0" id="10000024" name="inst_771EF2AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_water_tileset" x="352" y="512" w="32" h="32" xo="32" yo="0" id="10000025" name="inst_0BC12BDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

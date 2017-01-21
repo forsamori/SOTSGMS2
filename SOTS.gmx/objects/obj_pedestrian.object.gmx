@@ -57,6 +57,11 @@ obj_seagull.counter = 1;
 
 obj_seagull.score += points*obj_seagull.multiplier;
 show_debug_message(obj_seagull.score);
+
+// Blood
+
+scr_part_blood_play(x,y,100);
+
 </string>
           </argument>
         </arguments>
@@ -82,10 +87,7 @@ show_debug_message(obj_seagull.score);
             <string>/// While being held
 event_inherited();
 
-if(self.pickedUp)
-{
-    scr_part_blood_play(x,y);
-}
+
 </string>
           </argument>
         </arguments>
