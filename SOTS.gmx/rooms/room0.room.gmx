@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_seagull" x="512" y="416" name="inst_C009B882" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="352" y="384" name="inst_8301B355" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trash" x="736" y="416" name="inst_EB3DF137" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
