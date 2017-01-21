@@ -49,6 +49,11 @@ held_item = noone;
 
 //
 state = scr_seagull_move_state
+
+//Greg's code for scaling swoop
+scaleCounter = 0;
+initialScaleX = obj_seagull.image_xscale;
+initialScaleY = obj_seagull.image_yscale;
 </string>
           </argument>
         </arguments>

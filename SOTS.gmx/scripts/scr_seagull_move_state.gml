@@ -9,6 +9,10 @@ if (fly_mode)
 
     move_towards_point(mouse_x,mouse_y,forward_speed);
     //Move forward
+    obj_seagull.image_xscale = initialScaleX;
+    obj_seagull.image_yscale = initialScaleY;
+    //reset scale counter when leaving swoop state
+    scaleCounter = 0;
 }
 
 
