@@ -43,6 +43,7 @@
     <object>objects\obj_tanker</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_blood</object>
+    <object>objects\obj_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -90,7 +90,7 @@ if (obj_seagull.drop == true)
           <argument>
             <kind>1</kind>
             <string>// Colloision With Seagull while swooping
-if (obj_seagull.swooping == true)
+if (obj_seagull.swooping == true &amp;&amp; !obj_seagull.item_held)
 {
     pickedUp = true;
     other.item_held = true;
