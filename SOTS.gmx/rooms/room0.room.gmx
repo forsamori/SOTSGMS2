@@ -60,6 +60,7 @@
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_CF8DD74B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pedestrian" x="352" y="96" name="inst_2EC5C708" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trash" x="160" y="416" name="inst_78312486" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_highscore_board" x="640" y="96" name="inst_E5B64C3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
