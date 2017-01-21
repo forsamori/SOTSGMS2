@@ -44,6 +44,7 @@ level = 1
 size = 1
 
 var dir = 0.0
+var pdist = 0;
 
 held_item = noone;
 
@@ -132,10 +133,15 @@ script_execute(state);
           <argument>
             <kind>1</kind>
             <string>/// Seagull Hover
-if(fly_mode)
+if(!hover_mode)
 {
     hover_mode = true;
-    fly_mode = false;
+    forward_speed = 0;
+}
+else
+{
+    hover_mode = false;
+    forward_speed = 5;
 }
 </string>
           </argument>
