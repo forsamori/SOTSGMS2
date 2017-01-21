@@ -25,17 +25,20 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
 }
 
 
-obj_seagull.drop = true;
-obj_seagull.item_held = false;
+
+
 
 if(instance_exists(obj_seagull.held_item))
 {
-with(obj_seagull.held_item)
+    with(obj_seagull.held_item)
     {
-        instance_destroy()
+        pickedUp = false;
+        //instance_destroy();
     }
 }
+obj_seagull.drop = true;
+obj_seagull.item_held = false;
+obj_seagull.held_item = noone;
+//obj_seagull.swooping = false;
 
-obj_seagull.held_item = noone
-
-state = scr_seagull_move_state;
+obj_seagull.state = scr_seagull_move_state;

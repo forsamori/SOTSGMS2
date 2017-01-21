@@ -81,7 +81,7 @@ initialScaleY = obj_seagull.image_yscale;
 drop = false;
 swooping = false;
 forward_speed = BASE_SPEED;
-state = scr_seagull_move_state;
+obj_seagull.state = scr_seagull_move_state;
 </string>
           </argument>
         </arguments>
@@ -105,7 +105,7 @@ state = scr_seagull_move_state;
           <argument>
             <kind>1</kind>
             <string>///Seagull Movement
-script_execute(state);
+script_execute(self.state);
 
 //image_angle = point_direction(x, y, mouse_x, mouse_y);
 
@@ -115,6 +115,29 @@ script_execute(state);
 //    move_towards_point(mouse_x,mouse_y,forward_speed);
 //    //Move forward
 //}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug
+
+show_debug_message("obj_seagull.item_held = " + string(item_held));
 </string>
           </argument>
         </arguments>
@@ -147,38 +170,6 @@ else
 }
 
 show_debug_message(forward_speed);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Swooping
-//if (swooping == false)
-//{
-//    swooping = true;
-//}
-//else if (swooping == true)
-//{
-//    drop = true;
-//    swooping = false;
-//}
 </string>
           </argument>
         </arguments>

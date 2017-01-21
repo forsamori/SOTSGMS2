@@ -39,13 +39,13 @@ else
 
 if(left_mouse_pressed && !obj_seagull.item_held)
 {
-    state = scr_seagull_swooping_state
+    obj_seagull.state = scr_seagull_swooping_state
 }
 else if(left_mouse_pressed && obj_seagull.item_held)
 {
-    state = scr_seagull_dropping_state
+    obj_seagull.state = scr_seagull_dropping_state
 }
 else if(right_mouse_pressed && obj_seagull.item_held && obj_seagull.held_item.eatable)
 {
-    state = scr_seagull_eat_state
+    obj_seagull.state = scr_seagull_eat_state
 }

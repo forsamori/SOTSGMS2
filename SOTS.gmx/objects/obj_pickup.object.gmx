@@ -60,6 +60,7 @@ if (pickedUp == true)
     image_angle = obj_seagull.dir;
     x = obj_seagull.x;
     y = obj_seagull.y;
+    show_debug_message("pickedup = true");
 }
 
 // If the segul is dropping then set picked up bool false.
@@ -67,7 +68,7 @@ if (obj_seagull.drop == true)
 {
     pickedUp = false;
     obj_seagull.drop = false
-    
+    show_debug_message("Dropping item");
 }
 </string>
           </argument>
@@ -97,6 +98,7 @@ if (obj_seagull.swooping == true &amp;&amp; !obj_seagull.item_held)
     pickedUp = true;
     other.item_held = true;
     other.held_item = self;
+    show_debug_message("Picked up item");
 }
 </string>
           </argument>

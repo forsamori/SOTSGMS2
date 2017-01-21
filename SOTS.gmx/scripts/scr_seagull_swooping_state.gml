@@ -22,6 +22,7 @@ else if (swooping == true)
     obj_seagull.image_yscale = initialScaleY * scaleVal;
 
     scaleCounter += 1;
+    
 }
 
 //state = scr_seagull_move_state
