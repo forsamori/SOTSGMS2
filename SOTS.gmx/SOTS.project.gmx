@@ -78,6 +78,7 @@
       <object>objects\obj_exit_button</object>
       <object>objects\obj_help_button</object>
     </objects>
+    <object>objects\obj_seagull</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
