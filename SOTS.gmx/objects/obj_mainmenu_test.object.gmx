@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// obj_pickup Init
-eatable = true;
-weight = 2;
-pickedUp = false;
-dropped = false;
+            <string>/// Menu Test Object.
+draw_set_halign(fa_center); 
+
+selection = 0;
+array[0] = 'Start';
+array[1] = 'Quit';
 </string>
           </argument>
         </arguments>
@@ -52,51 +53,42 @@ dropped = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// pickup_Update
-
-// Move with the seagull.
-if (pickedUp == true)
+            <string>/// Main Menu.
+scr_get_input();
+if(up_key)
 {
-    image_angle = obj_seagull.dir;
-    x = obj_seagull.x;
-    y = obj_seagull.y;
+    self.selection -= 1;
+    if(self.selection &lt; 0)
+    {
+        self.selection = array_length_1d(array)
+    }
 }
 
-// If the segul is dropping then set picked up bool false.
-if (obj_seagull.drop == true)
+if(down_key)
 {
-    pickedUp = false;
-    obj_seagull.drop = false
+    self.selection += 1;
+    if(self.selection &lt; array_length_1d(array))
+    {
+        self.selection = 0
+    }
+}
+
+draw_set_font(Test_Menu_Font);
+
+
+
+for(var i = 0; i &lt;array_length_1d(array) - 1; i++;)
+{
+    if(self.selection == i)
+    {
+        draw_set_font(  Test_Menu_Font);
+    }
+    else
+    {
+        draw_set_font(Test_Selection_Font)
+    }
     
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_seagull">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Colloision With Seagull while swooping
-if (obj_seagull.swooping == true &amp;&amp; !obj_seagull.item_held)
-{
-    pickedUp = true;
-    other.item_held = true;
-    other.held_item = self;
+    draw_text(room_width/2, 40, array[i]);
 }
 </string>
           </argument>

@@ -24,4 +24,18 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
 
 }
 
-state = scr_seagull_dropping_state;
+
+obj_seagull.drop = true;
+obj_seagull.item_held = false;
+
+if(instance_exists(obj_seagull.held_item))
+{
+with(obj_seagull.held_item)
+    {
+        instance_destroy()
+    }
+}
+
+obj_seagull.held_item = noone
+
+state = scr_seagull_move_state;

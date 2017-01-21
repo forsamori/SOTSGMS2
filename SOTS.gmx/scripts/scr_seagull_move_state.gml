@@ -1,18 +1,32 @@
 ///scr_seagull_move_state
 scr_get_input();
 
-//rotate seagull towards mouse position
-obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
+obj_seagull.image_xscale = initialScaleX;
+obj_seagull.image_yscale = initialScaleY;
+//reset scale counter when leaving swoop state
+scaleCounter = 0;
+    
 obj_seagull.dir =  point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
-if (fly_mode)
-{
+obj_seagull.pdist = point_distance( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
 
-    move_towards_point(mouse_x,mouse_y,forward_speed);
+//rotate seagull towards mouse position
+if(obj_seagull.pdist <= 30)
+{
+    forward_speed = 0;
+    hover_mode = true;
+}
+else
+{
+    hover_mode = false;
+    forward_speed = 5;
+    obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
+}
+
+
+if (!hover_mode)
+{
     //Move forward
-    obj_seagull.image_xscale = initialScaleX;
-    obj_seagull.image_yscale = initialScaleY;
-    //reset scale counter when leaving swoop state
-    scaleCounter = 0;
+    move_towards_point(mouse_x,mouse_y,forward_speed);
 }
 
 
