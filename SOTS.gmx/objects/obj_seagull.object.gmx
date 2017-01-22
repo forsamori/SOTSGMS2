@@ -34,6 +34,10 @@ multiplier_triggered = false;
 counter = 0;
 remaining_time = 0;
 
+//Animation frames
+ANIM_MOVE_START = 0
+ANIM_MOVE_END = 11 
+
 forward_speed = BASE_SPEED;
 swooping = false;
 drop = false;
@@ -328,6 +332,11 @@ if (self.evolving)
 }
 else
 {
+    image_speed = 10/room_speed;
+    if (image_index &gt;= ANIM_MOVE_END)
+    {
+        image_index = ANIM_MOVE_START;
+    }
     draw_self();
 }
 </string>
