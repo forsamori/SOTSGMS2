@@ -129,6 +129,7 @@ if (falling == true)
         if (splash == true)
         {
             obj_seagull.Seacounter = 10;
+            scr_trigger_wave();
         }
         self.fallCounter = 0;
         self.falling = false;
@@ -159,12 +160,11 @@ if (falling == true)
           <argument>
             <kind>1</kind>
             <string>
-if(instance_exists( obj_seagull.held_item))
+if(obj_seagull.Seacounter &gt; 0)
 {
-    if(obj_seagull.held_item.falling == true)
+    if(falling == true)
     {
         splash = true;
-        scr_trigger_wave();
         //obj_terrain_deep_water.hspeed -= weight*10
     }
     else

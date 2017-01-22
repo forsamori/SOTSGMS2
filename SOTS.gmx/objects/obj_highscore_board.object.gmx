@@ -72,6 +72,9 @@ else
         file_text_close(file);
         show_debug_message("file_written_to");
     }
+    
+    room_goto(rm_ending)
+    
 }
 </string>
           </argument>

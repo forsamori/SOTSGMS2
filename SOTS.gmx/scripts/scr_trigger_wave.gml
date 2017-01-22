@@ -17,14 +17,7 @@ obj_wave.hspeed -= 10.1
 
 show_debug_message(obj_wave.x)
 
-if(obj_terrain_deep_water.x <= -10)
-{
-    obj_seagull.forward_speed = 0;
-    
-    room_goto(rm_ending)
-    
 
-}
     
 
 
