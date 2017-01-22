@@ -97,34 +97,33 @@ points = 200;
 // Move with the seagull.
 if (pickedUp == true)
 {
-    image_angle = obj_seagull.dir;
-    x = obj_seagull.x;
-    y = obj_seagull.y;
+    self.image_angle = obj_seagull.dir;
+    self.x = obj_seagull.x;
+    self.y = obj_seagull.y;
     show_debug_message("pickedup = true");
-    image_xscale = obj_seagull.image_xscale * 2;
-    image_yscale = obj_seagull.image_yscale * 2;
+    self.image_xscale = obj_seagull.image_xscale * 2;
+    self.image_yscale = obj_seagull.image_yscale * 2;
 }
 
 // If the segul is dropping then set picked up bool false.
-if (obj_seagull.drop == true)
-{
-    falling = true;
-    pickedUp = false;
-    obj_seagull.drop = false
-    show_debug_message("Dropping item");
-}
+//if (obj_seagull.drop == true)
+//{
+ //   self.falling = true;
+//    self.pickedUp = false;
+//    obj_seagull.drop = false
+//    show_debug_message("Dropping item");
+//}
 
 if (falling == true)
 {
-    scaleVal = ((-1 / 10) * fallCounter) + 2;
-    image_xscale = initialScaleX * scaleVal;
-    image_yscale = initialScaleY * scaleVal;
-    fallCounter++;
-    if (fallCounter &gt;= 10)
+    self.scaleVal = ((-1 / 10) * self.fallCounter) + 2;
+    image_xscale = self.initialScaleX * self.scaleVal;
+    image_yscale = self.initialScaleY * self.scaleVal;
+    self.fallCounter++;
+    if (self.fallCounter &gt;= 10)
     {
-        
-        fallCounter = 0;
-        falling = false;
+        self.fallCounter = 0;
+        self.falling = false;
         instance_destroy();
     }
 }

@@ -32,6 +32,7 @@
         inst = instance_create(random(room_width),random(room_height),obj_trash);
         inst.image_xscale = 0.25;
         inst.image_yscale = 0.25;
+    
     }
 }
 </string>

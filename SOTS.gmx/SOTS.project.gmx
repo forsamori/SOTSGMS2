@@ -60,6 +60,7 @@
     <scripts name="helper_scripts">
       <script>scripts\scr_chance.gml</script>
       <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_falling_object.gml</script>
     </scripts>
     <scripts name="particals">
       <script>scripts\scr_part_blood_init.gml</script>

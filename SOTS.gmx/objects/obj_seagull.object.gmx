@@ -184,7 +184,7 @@ script_execute(state);
             <string>///THE RETURN OF HOVER ANGLE
 if(hover_mode)
 {
-    show_debug_message(path_position);
+    //show_debug_message(path_position);
     obj_seagull.image_angle = -path_position * 360;
  }
  else

@@ -3,9 +3,11 @@
 obj_seagull.experience += obj_seagull.held_item.weight
 obj_seagull.weight += obj_seagull.held_item.weight
 
+obj_seagull.held_item.eaten = true;
+
 Evo = false;
 
-obj_seagull.drop = true;
+
 obj_seagull.item_held = false;
 if (obj_seagull.experience >= obj_seagull.next_level_exp)
 {
@@ -15,16 +17,17 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
     
     Evo = true;
 }
-
+show_debug_message(obj_seagull.held_item);
 
 if(instance_exists(obj_seagull.held_item))
 {
     with(obj_seagull.held_item)
     {
-        pickedUp = false;
+        obj_seagull.held_item.pickedUp = false;
         instance_destroy();
     }
 }
+
 obj_seagull.held_item = noone;
 //obj_seagull.swooping = false;
 
