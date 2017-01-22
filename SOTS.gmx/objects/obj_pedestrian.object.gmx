@@ -29,6 +29,12 @@
 points = 100;
 
 weight = 1;
+
+//set scale
+image_xscale = 0.25;
+image_yscale = 0.25;
+initialScaleX = image_xscale;
+initialScaleY = image_yscale;
 </string>
           </argument>
         </arguments>
