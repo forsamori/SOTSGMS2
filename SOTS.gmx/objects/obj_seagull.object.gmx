@@ -178,6 +178,35 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Direction Facing
+if(hover_mode)
+{
+    obj_seagull.image_angle = -path_position * 360;
+ }
+ else
+ {
+    obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
+ }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Multiplier
 //If in cooldown period, each explosion multiplies multiplier by 2.
 //If cooldown expires, reset to 1x.
@@ -268,38 +297,6 @@ else
 {
     draw_self();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///THE RETURN OF HOVER ANGLE
-if(hover_mode)
-{
-    show_debug_message(path_position);
-    obj_seagull.image_angle = -path_position * 360;
- }
- else
- {
-    obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
- }
 </string>
           </argument>
         </arguments>

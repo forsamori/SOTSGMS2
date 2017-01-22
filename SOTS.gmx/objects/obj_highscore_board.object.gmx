@@ -27,7 +27,17 @@
             <kind>1</kind>
             <string>var file;
 gameState = "playing";
-
+if (file_exists(working_directory + ("\HighscoreBoard.txt")))
+{
+    show_debug_message("it exists");
+    file = file_text_open_read(working_directory + ("\HighscoreBoard.txt"));
+    currentHscore = file_text_read_real(file);
+    file_text_close(file);
+}
+else
+{
+    currentHscore = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -52,17 +62,23 @@ gameState = "playing";
             <kind>1</kind>
             <string>if (gameState == "win")
 {
+    show_debug_message(currentHscore);
     gameState = "finished";
-    file = file_text_open_write(working_directory + "\HighscoreBoard.txt");
-    file_text_write_string(file, string(obj_seagull.score));
-    file_text_close(file);
+    if (obj_seagull.score &gt; currentHscore)
+    {
+        currentHscore = obj_seagull.score;
+        file = file_text_open_write(working_directory + "\HighscoreBoard.txt");
+        file_text_write_real(file, obj_seagull.score);
+        file_text_close(file);
+        show_debug_message("file_written_to");
+    }
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="72">
+    <event eventtype="9" enumb="72">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -80,6 +96,36 @@ gameState = "playing";
           <argument>
             <kind>1</kind>
             <string>gameState = "win";
+show_debug_message("H_Pressed");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (file_exists(working_directory + "\HighscoreBoard.txt"))
+{
+    file_delete(working_directory + "\HighscoreBoard.txt");
+    show_debug_message("file deleted");
+    currentHscore = 0;
+}
+show_debug_message("D_Pressed");
 </string>
           </argument>
         </arguments>
