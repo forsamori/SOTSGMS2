@@ -164,7 +164,8 @@ if(instance_exists( obj_seagull.held_item))
     if(obj_seagull.held_item.falling == true)
     {
         splash = true;
-        obj_terrain_deep_water.hspeed -= this.weight*10
+        scr_trigger_wave();
+        //obj_terrain_deep_water.hspeed -= weight*10
     }
     else
     {

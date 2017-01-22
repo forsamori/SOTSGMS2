@@ -69,6 +69,7 @@
     <background>background\bg_city_walkwaysandroads</background>
     <background>background\bg_sand_water</background>
     <background>background\bg_seagull_eye</background>
+    <background>background\background7</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
