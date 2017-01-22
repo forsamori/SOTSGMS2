@@ -43,7 +43,7 @@
       <sprite>sprites\spr_house_00</sprite>
       <sprite>sprites\spr_house_01</sprite>
       <sprite>sprites\spr_house_02</sprite>
-      <sprite>sprites\spr_hosue_03</sprite>
+      <sprite>sprites\spr_house_03</sprite>
       <sprite>sprites\spr_house_04</sprite>
     </sprites>
     <sprites name="terrain">
@@ -59,6 +59,7 @@
     <background>background\background2</background>
     <background>background\bg_water_tileset</background>
     <background>background\bg_city_walkwaysandroads</background>
+    <background>background\bg_sand_water</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
@@ -132,6 +133,11 @@
     <object>objects\obj_shrapnel</object>
     <objects name="buildings">
       <object>objects\obj_house_00</object>
+      <object>objects\obj_house_01</object>
+      <object>objects\obj_house_02</object>
+      <object>objects\obj_house_03</object>
+      <object>objects\obj_house_04</object>
+      <object>objects\obj_building</object>
     </objects>
     <objects name="terrain">
       <object>objects\obj_terrain_deep_water</object>
