@@ -100,6 +100,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\Evolution_Shader.shader</shader>
+    <shader type="GLSLES">shaders\shd_wave_distort.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>

@@ -25,28 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>uni_time = shader_get_uniform(sha_wave,"time");
+            <string>uni_time = shader_get_uniform(shd_wave_distort,"time");
 var_time_var = 0;
 
-uni_mouse_pos = shader_get_uniform(sha_wave,"mouse_pos");
-var_mouse_pos_x = mouse_x - view_xview;
-var_mouse_pos_y = mouse_y - view_yview;
+uni_resolution = shader_get_uniform(shd_wave_distort,"resolution");
+var_resolution_x = sprite_width;
+var_resolution_y = sprite_height;
 
-uni_resolution = shader_get_uniform(sha_wave,"resolution");
-var_resolution_x = view_wport;
-var_resolution_y = view_hport;
-
-uni_wave_amount = shader_get_uniform(sha_wave,"wave_amount");
-var_wave_amount = 20; //higher = more waves
-
-uni_wave_distortion = shader_get_uniform(sha_wave,"wave_distortion");
-var_wave_distortion = 30; //higher = less distortion
-
-uni_wave_speed = shader_get_uniform(sha_wave,"wave_speed");
-var_wave_speed = 2.0; //higher = faster
-
-shader_enabled = true;
-full_screen_effect = true;
 </string>
           </argument>
         </arguments>
@@ -77,6 +62,8 @@ if keyboard_check(ord('S')) var_wave_distortion -= 1;
 
 if keyboard_check(ord('E')) var_wave_speed += 1;
 if keyboard_check(ord('D')) var_wave_speed -= 1;
+
+var_time_var+=1;
 </string>
           </argument>
         </arguments>
@@ -102,20 +89,13 @@ if keyboard_check(ord('D')) var_wave_speed -= 1;
             <string>var_mouse_pos_x = mouse_x - view_xview;
 var_mouse_pos_y = mouse_y - view_yview ;
 
-shader_set(sha_wave);
+shader_set(shd_wave_distort);
 shader_set_uniform_f(uni_time, var_time_var);
-shader_set_uniform_f(uni_mouse_pos, var_mouse_pos_x, var_mouse_pos_y);
 shader_set_uniform_f(uni_resolution, var_resolution_x, var_resolution_y);
-shader_set_uniform_f(uni_wave_amount, var_wave_amount);
-shader_set_uniform_f(uni_wave_distortion, var_wave_distortion );
-shader_set_uniform_f(uni_wave_speed, var_wave_speed);
 draw_self();
 shader_reset();
 
 draw_text(0,0,"Real FPS: "+string(fps_real));
-draw_text(0,12,"Wave amount (Q &amp; A to adjust): "+string(var_wave_amount));
-draw_text(0,24,"Wave distortion (W &amp; S to adjust): "+string(var_wave_distortion));
-draw_text(0,36,"Wave speed (E &amp; D to adjust): "+string(var_wave_speed));
 </string>
           </argument>
         </arguments>
