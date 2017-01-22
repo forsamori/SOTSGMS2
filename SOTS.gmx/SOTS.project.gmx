@@ -63,6 +63,10 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
+    <paths name="pedestrians">
+      <path>paths\pth_pedestrian_1</path>
+      <path>paths\pth_pedestrian_2</path>
+    </paths>
   </paths>
   <scripts name="scripts">
     <scripts name="Seagull States">

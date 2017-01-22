@@ -56,7 +56,7 @@
     <instance objName="obj_ps" x="160" y="224" name="inst_B1E9E213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ps" x="160" y="224" name="inst_8C25C855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_car" x="160" y="128" name="inst_50E8BF7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pedestrian" x="352" y="96" name="inst_2EC5C708" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pedestrian" x="640" y="1024" name="inst_2EC5C708" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trash" x="448" y="96" name="inst_78312486" locked="0" code="" scaleX="0.125" scaleY="0.129999995231628" colour="4294967295" rotation="0"/>
     <instance objName="obj_seagull" x="512" y="416" name="inst_F5E8FD55" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_black_out" x="0" y="224" name="inst_584EFF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -3072,8 +3072,6 @@
     <tile bgName="bg_city_walkwaysandroads" x="576" y="1024" w="32" h="32" xo="165" yo="0" id="10004398" name="inst_F3A65715" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="576" y="992" w="32" h="32" xo="165" yo="0" id="10004399" name="inst_94E1818F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="576" y="960" w="32" h="32" xo="165" yo="0" id="10004400" name="inst_B9D00771" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_city_walkwaysandroads" x="608" y="960" w="32" h="32" xo="165" yo="0" id="10004401" name="inst_AD78FB34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_city_walkwaysandroads" x="640" y="960" w="32" h="32" xo="165" yo="0" id="10004402" name="inst_E6391262" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="640" y="1024" w="32" h="32" xo="165" yo="0" id="10004403" name="inst_9E731288" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="576" y="1792" w="32" h="32" xo="165" yo="0" id="10004404" name="inst_D4A054AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="576" y="1760" w="32" h="32" xo="165" yo="0" id="10004405" name="inst_CB98DEBB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3130,6 +3128,17 @@
     <tile bgName="bg_city_walkwaysandroads" x="2368" y="192" w="32" h="32" xo="165" yo="0" id="10004456" name="inst_90111705" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="2368" y="224" w="32" h="32" xo="165" yo="0" id="10004457" name="inst_9AF27D18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_city_walkwaysandroads" x="2368" y="256" w="32" h="32" xo="165" yo="0" id="10004458" name="inst_6FF4A46C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="608" y="960" w="32" h="32" xo="99" yo="0" id="10004459" name="inst_070A33BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="640" y="960" w="32" h="32" xo="99" yo="0" id="10004460" name="inst_1CB6D5A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="672" y="960" w="32" h="32" xo="99" yo="0" id="10004461" name="inst_5CF21F6C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="704" y="960" w="32" h="32" xo="99" yo="0" id="10004462" name="inst_500DF0AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="736" y="960" w="32" h="32" xo="99" yo="0" id="10004463" name="inst_7FA0CC9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="768" y="960" w="32" h="32" xo="99" yo="0" id="10004464" name="inst_B3F880B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="800" y="960" w="32" h="32" xo="99" yo="0" id="10004465" name="inst_6D3BA544" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="864" y="960" w="32" h="32" xo="99" yo="0" id="10004466" name="inst_8F6ED390" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="832" y="960" w="32" h="32" xo="99" yo="0" id="10004467" name="inst_B17AF1DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="896" y="960" w="32" h="32" xo="99" yo="0" id="10004468" name="inst_F738C756" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_city_walkwaysandroads" x="928" y="960" w="32" h="32" xo="99" yo="0" id="10004469" name="inst_9396492C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

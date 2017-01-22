@@ -252,7 +252,7 @@ if (counter &gt; MULTIPLIER_COOLDOWN * room_speed)
 }
 else if (multiplier_triggered == true)
 {
-    multiplier *= 2;
+    multiplier += 0.2;
     multiplier_triggered = false;
 }
 
