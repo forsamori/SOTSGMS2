@@ -19,6 +19,8 @@
     <sound>sound\snd_fifth1</sound>
     <sound>sound\snd_sixth1</sound>
     <sound>sound\snd_spook1</sound>
+    <sound>sound\snd_explosion1</sound>
+    <sound>sound\snd_explosion2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="dropables">
