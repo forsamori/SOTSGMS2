@@ -32,7 +32,10 @@
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_blood</sprite>
     <sprites name="Buttons">
-      <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_start_button</sprite>
+      <sprite>sprites\spr_help_button</sprite>
+      <sprite>sprites\spr_exit_button</sprite>
+      <sprite>sprites\spr_button_credits</sprite>
     </sprites>
     <sprite>sprites\spr_black_out</sprite>
     <sprite>sprites\spr_seagull_00</sprite>
@@ -52,6 +55,7 @@
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_wave</sprite>
     </sprites>
+    <sprite>sprites\words</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -60,6 +64,7 @@
     <background>background\bg_water_tileset</background>
     <background>background\bg_city_walkwaysandroads</background>
     <background>background\bg_sand_water</background>
+    <background>background\bg_seagull_eye</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
@@ -159,6 +164,7 @@
       <object>objects\obj_terrain_grass</object>
       <object>objects\obj_wave</object>
     </objects>
+    <object>objects\text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
