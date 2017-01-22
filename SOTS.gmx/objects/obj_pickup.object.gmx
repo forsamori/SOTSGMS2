@@ -33,6 +33,7 @@ pickedUp = false;
 dropped = false;
 
 splash = false;
+splashCounter = 10;
 
 //some new code to time the fall
 fallCounter = 0;
@@ -40,6 +41,8 @@ falling = false;
 scaleVal = 0;
 
 points = 200;
+
+canShrapnel = true;
 </string>
           </argument>
         </arguments>
@@ -62,7 +65,7 @@ points = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!eaten)
+            <string>if(!eaten &amp;&amp; canShrapnel)
 {
     for(i=0;i&lt;random_range(4, 7);i++)
     {   
@@ -125,13 +128,14 @@ if (falling == true)
     {
         if (splash == true)
         {
-            scr_trigger_wave();
+            obj_seagull.Seacounter = 10;
         }
         self.fallCounter = 0;
         self.falling = false;
         instance_destroy();
     }
 }
+
 </string>
           </argument>
         </arguments>
@@ -154,13 +158,17 @@ if (falling == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(falling==true)
+            <string>
+if(instance_exists( obj_seagull.held_item))
 {
-    splash = true;
-}
-else
-{
-    splash = false;
+    if(obj_seagull.held_item.falling == true)
+    {
+        splash = true;
+    }
+    else
+    {
+        splash = false;
+    }
 }
 </string>
           </argument>
@@ -184,7 +192,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>canShrapnel = false;
+instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -207,7 +216,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>canShrapnel = false;
+instance_destroy();
 </string>
           </argument>
         </arguments>

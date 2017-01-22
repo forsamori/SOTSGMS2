@@ -19,6 +19,8 @@
     <sound>sound\snd_fifth1</sound>
     <sound>sound\snd_sixth1</sound>
     <sound>sound\snd_spook1</sound>
+    <sound>sound\snd_explosion1</sound>
+    <sound>sound\snd_explosion2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="dropables">
@@ -51,6 +53,7 @@
       <sprite>sprites\spr_shallow_water</sprite>
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_deep_wave</sprite>
     </sprites>
     <sprite>sprites\spr_person</sprite>
   </sprites>
@@ -67,6 +70,15 @@
     <paths name="pedestrians">
       <path>paths\pth_pedestrian_1</path>
       <path>paths\pth_pedestrian_2</path>
+      <path>paths\pth_pedestrian_3</path>
+      <path>paths\pth_pedestrian_4</path>
+      <path>paths\pth_pedestrian_5</path>
+      <path>paths\pth_pedestrian_6</path>
+      <path>paths\pth_pedestrian_7</path>
+      <path>paths\pth_pedestrian_8</path>
+      <path>paths\pth_pedestrian_9</path>
+      <path>paths\pth_pedestrian_10</path>
+      <path>paths\pth_pedestrian_11</path>
     </paths>
   </paths>
   <scripts name="scripts">
