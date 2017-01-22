@@ -46,6 +46,8 @@
     </sprites>
     <sprites name="terrain">
       <sprite>sprites\spr_deep_water</sprite>
+      <sprite>sprites\spr_shallow_water</sprite>
+      <sprite>sprites\spr_grass</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

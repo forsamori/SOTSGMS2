@@ -4,7 +4,7 @@
 // Dont need to write anything here yet
 if(!obj_seagull.evolving)
 {
-    alarm_set(1,room_speed * 10);
+    alarm_set(1,room_speed * 8);
     obj_seagull.evolving = true;
     
     obj_seagull.evo_alpha = 1/room_speed
@@ -15,13 +15,16 @@ if(!obj_seagull.evolving)
     
     move_towards_point(mouse_x, mouse_y, 0.0);
     
+    obj_black_out.x = obj_seagull.x;
+    obj_black_out.y = obj_seagull.y;
+    
     obj_seagull.image_speed = 0;
     
 }
 
 
 // Fade out background to black
-if(alarm_get(1) > room_speed*9)
+if(alarm_get(1) > room_speed*7)
 {
     obj_black_out.image_alpha += evo_alpha
 }
@@ -29,7 +32,7 @@ if(alarm_get(1) > room_speed*9)
 show_debug_message(room_speed);
 
 // Zoom camera onto the seagull.
-if(alarm_get(1) > room_speed*8)
+if(alarm_get(1) > room_speed*6)
 {
     view_hview -= evo_vzoom
     view_wview -= evo_hzoom
@@ -40,7 +43,7 @@ if(alarm_get(1) > room_speed*8)
 
 
 // Start Flashing and the evolving.
-if(alarm_get(1) <= room_speed*7)
+if(alarm_get(1) <= room_speed*4)
 {
     switch(obj_seagull.level)
     {
@@ -77,6 +80,7 @@ if(alarm_get(1) <= room_speed*1)
 if(alarm_get(1) <= 0)
 {
     obj_black_out.evolving = 0
+    alarm[1] = -1;
     state = scr_seagull_move_state;
 }
 // Resume

@@ -52,7 +52,11 @@ weight = 10
             <kind>1</kind>
             <string>event_inherited();
 
-instance_create(x,y,obj_explosion);
+if(!eaten)
+{
+    instance_create(x,y,obj_explosion);
+}
+
 show_debug_message("Destroying car");
 
 obj_seagull.multiplier_triggered = true;
@@ -60,8 +64,10 @@ obj_seagull.counter = 1;
 
 obj_seagull.score += points*obj_seagull.multiplier;
 show_debug_message(obj_seagull.score);
-
-scr_part_eating_play(x,y,50);
+if(eaten)
+{
+    scr_part_eating_play(x,y,50);
+}
 </string>
           </argument>
         </arguments>
