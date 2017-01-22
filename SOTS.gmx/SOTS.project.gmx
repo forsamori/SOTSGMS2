@@ -27,12 +27,20 @@
     <sprite>sprites\spr_seagull_01</sprite>
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\spr_shrapnel</sprite>
+    <sprites name="buildings">
+      <sprite>sprites\spr_house_00</sprite>
+      <sprite>sprites\spr_house_01</sprite>
+      <sprite>sprites\spr_house_02</sprite>
+      <sprite>sprites\spr_hosue_03</sprite>
+      <sprite>sprites\spr_house_04</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
     <background>background\bg_start_screen</background>
     <background>background\background2</background>
     <background>background\bg_water_tileset</background>
+    <background>background\bg_city_walkwaysandroads</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
@@ -101,6 +109,9 @@
     <object>objects\obj_black_out</object>
     <object>objects\obj_highscore_board</object>
     <object>objects\obj_shrapnel</object>
+    <objects name="buildings">
+      <object>objects\obj_house_00</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
