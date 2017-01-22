@@ -53,7 +53,13 @@ rando = 1;
 {
     for (i = 0; i &lt; 5; i++)
     {
-        inst = instance_create(random(room_width),random(room_height),obj_trash);
+        spawnx = 0;
+        spawny = 0;
+        
+        spawnx = obj_seagull.x + (random(50) - 25);
+        spawny = obj_seagull.y + (random(50) - 25);
+        
+        inst = instance_create(spawnx ,spawny, obj_trash);
     }
 }
 </string>
@@ -93,6 +99,44 @@ if (pedCount &gt; 180)
     pedCount = 0;
 }
 show_debug_message(pedCount); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!instance_exists(obj_car))
+{
+    for (i = 0; i &lt; 10; i++)
+    {
+        spawnx = 0;
+        spawny = 0;
+        
+        spawnx = obj_seagull.x + (random(1000) - 500);
+        
+        clamp (spawnx,0,room_width);
+        
+        spawny = obj_seagull.y + (random(1000) - 500);
+        
+        clamp (spawny,0,room_height);
+        
+        inst = instance_create(spawnx ,spawny, obj_car);
+    }
+}
 </string>
           </argument>
         </arguments>

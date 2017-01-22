@@ -35,7 +35,7 @@ counter = 0;
 remaining_time = 0;
 game_time = 0;
 
-Seacounter = 0;
+
 
 //Animation frames
 ANIM_LVL1_MOVE_START = 0
@@ -117,6 +117,30 @@ audio_sound_gain(snd, 1, 0);
 //Level3
 snd = audio_play_sound(snd_spook1, 0, 1);
 audio_sound_gain(snd, 1, 0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Sea Code
+Seacounter = 0;
+seaSpeed = 0;
+seaForce = 0.001;
 </string>
           </argument>
         </arguments>
@@ -296,12 +320,12 @@ remaining_time = (MULTIPLIER_COOLDOWN * room_speed) - counter;
             <kind>1</kind>
             <string>/// Sea Moving
 
-if(Seacounter &gt; 0)
-{
-    Seacounter--;
-    scr_trigger_wave();
+scr_trigger_wave();
+    
 
-}
+
+
+
 </string>
           </argument>
         </arguments>
