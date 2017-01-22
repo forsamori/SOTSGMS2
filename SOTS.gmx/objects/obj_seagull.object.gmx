@@ -34,6 +34,10 @@ multiplier_triggered = false;
 counter = 0;
 remaining_time = 0;
 
+//Animation frames
+ANIM_MOVE_START = 0
+ANIM_MOVE_END = 11 
+
 forward_speed = BASE_SPEED;
 swooping = false;
 drop = false;
@@ -61,6 +65,10 @@ held_item = noone;
 
 //
 state = scr_seagull_move_state
+
+//set scale
+image_xscale = 0.25;
+image_yscale = 0.25;
 
 //Greg's code for scaling swoop
 scaleCounter = 0;
@@ -248,7 +256,7 @@ if (counter &gt; MULTIPLIER_COOLDOWN * room_speed)
 }
 else if (multiplier_triggered == true)
 {
-    multiplier *= 2;
+    multiplier += 0.2;
     multiplier_triggered = false;
 }
 
@@ -324,8 +332,37 @@ if (self.evolving)
 }
 else
 {
+    image_speed = 10/room_speed;
+    if (image_index &gt;= ANIM_MOVE_END)
+    {
+        image_index = ANIM_MOVE_START;
+    }
     draw_self();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="67">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//show_debug_message(initialScaleX);
+show_debug_message(obj_trash.initialScaleX);
 </string>
           </argument>
         </arguments>

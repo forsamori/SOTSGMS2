@@ -21,12 +21,14 @@
     <sound>sound\snd_spook1</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="dropables">
+      <sprite>sprites\spr_trash</sprite>
+      <sprite>sprites\spr_car</sprite>
+      <sprite>sprites\spr_pedestrian</sprite>
+      <sprite>sprites\spr_boat</sprite>
+      <sprite>sprites\spr_tanker</sprite>
+    </sprites>
     <sprite>sprites\spr_seagull</sprite>
-    <sprite>sprites\spr_trash</sprite>
-    <sprite>sprites\spr_pedestrian</sprite>
-    <sprite>sprites\spr_car</sprite>
-    <sprite>sprites\spr_boat</sprite>
-    <sprite>sprites\spr_tanker</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_blood</sprite>
     <sprites name="Buttons">
@@ -48,6 +50,7 @@
       <sprite>sprites\spr_deep_water</sprite>
       <sprite>sprites\spr_shallow_water</sprite>
       <sprite>sprites\spr_grass</sprite>
+      <sprite>sprites\spr_wave</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -60,6 +63,10 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_hover</path>
+    <paths name="pedestrians">
+      <path>paths\pth_pedestrian_1</path>
+      <path>paths\pth_pedestrian_2</path>
+    </paths>
   </paths>
   <scripts name="scripts">
     <scripts name="Seagull States">
@@ -93,6 +100,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\Evolution_Shader.shader</shader>
+    <shader type="GLSLES">shaders\shd_wave_distort.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>
@@ -135,14 +143,18 @@
       <object>objects\obj_house_04</object>
       <object>objects\obj_building</object>
     </objects>
-    <object>objects\obj_terrain_deep_water</object>
+    <objects name="terrain">
+      <object>objects\obj_terrain_deep_water</object>
+      <object>objects\obj_terrain_shallow_water</object>
+      <object>objects\obj_terrain_grass</object>
+      <object>objects\obj_wave</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
     <room>rooms\rm_help_screen</room>
     <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
-    <room>rooms\rm_enter_name</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

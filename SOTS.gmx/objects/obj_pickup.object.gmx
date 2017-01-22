@@ -36,8 +36,6 @@ dropped = false;
 fallCounter = 0;
 falling = false;
 scaleVal = 0;
-initialScaleX = image_xscale;
-initialScaleY = image_yscale;
 
 points = 200;
 </string>
@@ -101,8 +99,9 @@ if (pickedUp == true)
     self.x = obj_seagull.x;
     self.y = obj_seagull.y;
     show_debug_message("pickedup = true");
-    self.image_xscale = obj_seagull.image_xscale * 2;
-    self.image_yscale = obj_seagull.image_yscale * 2;
+    // x2 because the sprite sizes 
+    self.image_xscale = self.initialScaleX * obj_seagull.scaleVal * 2;
+    self.image_yscale = self.initialScaleX * obj_seagull.scaleVal * 2;
 }
 
 // If the segul is dropping then set picked up bool false.
@@ -116,9 +115,9 @@ if (pickedUp == true)
 
 if (falling == true)
 {
-    self.scaleVal = ((-1 / 10) * self.fallCounter) + 2;
-    image_xscale = self.initialScaleX * self.scaleVal;
-    image_yscale = self.initialScaleY * self.scaleVal;
+    self.scaleVal = ((-self.initialScaleX / 10) * self.fallCounter) + (2 * self.initialScaleX);
+    self.image_xscale = self.scaleVal;
+    self.image_yscale = self.scaleVal;
     self.fallCounter++;
     if (self.fallCounter &gt;= 10)
     {
