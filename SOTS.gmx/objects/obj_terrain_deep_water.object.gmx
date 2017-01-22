@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="obj_pickup">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,16 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_trash))
-{
-    for (i = 0; i &lt; 5; i++)
-    {
-        inst = instance_create(random(room_width),random(room_height),obj_trash);
-        inst.image_xscale = 0.25;
-        inst.image_yscale = 0.25;
-    
-    }
-}
+            <string>/// if its falling counter == 0;
 </string>
           </argument>
         </arguments>

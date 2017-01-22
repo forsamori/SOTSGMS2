@@ -48,7 +48,10 @@ else if(left_mouse_pressed && obj_seagull.item_held)
 {
     obj_seagull.state = scr_seagull_dropping_state
 }
-else if(right_mouse_pressed && obj_seagull.item_held && obj_seagull.held_item.eatable)
+else if(right_mouse_pressed && obj_seagull.item_held)
 {
-    obj_seagull.state = scr_seagull_eat_state
+    if(obj_seagull.held_item.eatable)
+    {
+        obj_seagull.state = scr_seagull_eat_state
+    }
 }
