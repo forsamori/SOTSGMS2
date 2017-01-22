@@ -96,7 +96,6 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\Evolution_Shader.shader</shader>
-    <shader type="GLSLES">shaders\sha_wave.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\Test_Menu_Font</font>
