@@ -14,6 +14,24 @@ if (obj_seagull.experience >= obj_seagull.next_level_exp)
     obj_seagull.experience = 0
     obj_seagull.next_level_exp *= 2
     obj_seagull.level += 1
+    if (obj_seagull.level == 2)
+    {
+        //audio_sound_gain(snd_first1, 1, 5000);
+       // audio_sound_gain(snd_first2, 1, 5000);
+        //audio_sound_gain(snd_second1, 1, 5000);
+        //audio_sound_gain(snd_second2, 1, 5000);
+        //audio_sound_gain(snd_second3, 1, 5000);
+        //audio_sound_gain(snd_second4, 1, 5000);
+        //audio_sound_gain(snd_third1, 1, 5000);
+        //audio_sound_gain(snd_third2, 1, 5000);
+        //audio_sound_gain(snd_fourth1, 1, 5000);
+        //audio_sound_gain(snd_fifth1, 1, 5000);
+        //audio_sound_gain(snd_sixth1, 1, 5000);
+    }
+    else if (obj_seagull.level == 3)
+    {
+        //audio_sound_gain(snd_spook1, 1, 5000);
+    }
     
     Evo = true;
 }

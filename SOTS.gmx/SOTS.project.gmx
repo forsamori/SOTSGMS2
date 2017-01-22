@@ -9,6 +9,16 @@
     <sound>sound\snd_bass2</sound>
     <sound>sound\snd_first1</sound>
     <sound>sound\snd_first2</sound>
+    <sound>sound\snd_second1</sound>
+    <sound>sound\snd_second2</sound>
+    <sound>sound\snd_second3</sound>
+    <sound>sound\snd_second4</sound>
+    <sound>sound\snd_third1</sound>
+    <sound>sound\snd_third2</sound>
+    <sound>sound\snd_fourth1</sound>
+    <sound>sound\snd_fifth1</sound>
+    <sound>sound\snd_sixth1</sound>
+    <sound>sound\snd_spook1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_seagull</sprite>
