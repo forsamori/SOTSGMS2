@@ -32,6 +32,8 @@ weight = 2;
 pickedUp = false;
 dropped = false;
 
+splash = false;
+
 //some new code to time the fall
 fallCounter = 0;
 falling = false;
@@ -121,10 +123,44 @@ if (falling == true)
     self.fallCounter++;
     if (self.fallCounter &gt;= 10)
     {
+        if (splash == true)
+        {
+            scr_trigger_wave();
+        }
         self.fallCounter = 0;
         self.falling = false;
         instance_destroy();
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_terrain_deep_water">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(falling==true)
+{
+    splash = true;
+}
+else
+{
+    splash = false;
 }
 </string>
           </argument>
