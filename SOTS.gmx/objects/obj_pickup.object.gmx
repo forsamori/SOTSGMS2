@@ -33,6 +33,7 @@ pickedUp = false;
 dropped = false;
 
 splash = false;
+splashCounter = 10;
 
 //some new code to time the fall
 fallCounter = 0;
@@ -127,13 +128,14 @@ if (falling == true)
     {
         if (splash == true)
         {
-            scr_trigger_wave();
+            obj_seagull.Seacounter = 10;
         }
         self.fallCounter = 0;
         self.falling = false;
         instance_destroy();
     }
 }
+
 </string>
           </argument>
         </arguments>
@@ -156,13 +158,17 @@ if (falling == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(falling==true)
+            <string>
+if(instance_exists( obj_seagull.held_item))
 {
-    splash = true;
-}
-else
-{
-    splash = false;
+    if(obj_seagull.held_item.falling == true)
+    {
+        splash = true;
+    }
+    else
+    {
+        splash = false;
+    }
 }
 </string>
           </argument>

@@ -51,6 +51,7 @@
       <sprite>sprites\spr_shallow_water</sprite>
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_deep_wave</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
