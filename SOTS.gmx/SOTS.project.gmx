@@ -66,6 +66,15 @@
     <paths name="pedestrians">
       <path>paths\pth_pedestrian_1</path>
       <path>paths\pth_pedestrian_2</path>
+      <path>paths\pth_pedestrian_3</path>
+      <path>paths\pth_pedestrian_4</path>
+      <path>paths\pth_pedestrian_5</path>
+      <path>paths\pth_pedestrian_6</path>
+      <path>paths\pth_pedestrian_7</path>
+      <path>paths\pth_pedestrian_8</path>
+      <path>paths\pth_pedestrian_9</path>
+      <path>paths\pth_pedestrian_10</path>
+      <path>paths\pth_pedestrian_11</path>
     </paths>
   </paths>
   <scripts name="scripts">

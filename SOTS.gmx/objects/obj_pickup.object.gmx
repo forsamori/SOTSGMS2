@@ -40,6 +40,8 @@ falling = false;
 scaleVal = 0;
 
 points = 200;
+
+canShrapnel = true;
 </string>
           </argument>
         </arguments>
@@ -62,7 +64,7 @@ points = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!eaten)
+            <string>if(!eaten &amp;&amp; canShrapnel)
 {
     for(i=0;i&lt;random_range(4, 7);i++)
     {   
@@ -184,7 +186,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>canShrapnel = false;
+instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -207,7 +210,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>canShrapnel = false;
+instance_destroy();
 </string>
           </argument>
         </arguments>

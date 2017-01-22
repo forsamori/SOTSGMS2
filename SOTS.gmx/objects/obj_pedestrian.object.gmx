@@ -38,6 +38,8 @@ initialScaleY = image_yscale;
 
 walkSpeed = 2;
 canChange = false; 
+
+chosenPath = pth_pedestrian_1;
 </string>
           </argument>
         </arguments>
@@ -59,7 +61,25 @@ canChange = false;
           <argument>
             <kind>1</kind>
             <string>///follow a path
-path_start(pth_pedestrian_2, walkSpeed, path_action_restart, 1);
+//random_set_seed(obj_seagull.game_time);
+
+switch (obj_spawner.rando)
+{
+    case 1: chosenPath = pth_pedestrian_1; break;
+    case 2: chosenPath = pth_pedestrian_2; break;
+    case 3: chosenPath = pth_pedestrian_3; break;
+    case 4: chosenPath = pth_pedestrian_4; break;
+    case 5: chosenPath = pth_pedestrian_5; break;
+    case 6: chosenPath = pth_pedestrian_6; break;
+    case 7: chosenPath = pth_pedestrian_7; break;
+    case 8: chosenPath = pth_pedestrian_8; break;
+    case 9: chosenPath = pth_pedestrian_9; break;
+    case 10: chosenPath = pth_pedestrian_10; break;
+    case 11: chosenPath = pth_pedestrian_11; break;
+}
+
+show_debug_message("path: " + string(chosenPath));
+path_start(chosenPath, walkSpeed, path_action_restart, 1);
 </string>
           </argument>
         </arguments>

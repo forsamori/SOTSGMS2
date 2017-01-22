@@ -33,6 +33,7 @@ MULTIPLIER_COOLDOWN = 5;
 multiplier_triggered = false;
 counter = 0;
 remaining_time = 0;
+game_time = 0;
 
 //Animation frames
 ANIM_LVL1_MOVE_START = 0
@@ -199,6 +200,8 @@ script_execute(state);
 //    move_towards_point(mouse_x,mouse_y,forward_speed);
 //    //Move forward
 //}
+
+game_time++;
 </string>
           </argument>
         </arguments>
