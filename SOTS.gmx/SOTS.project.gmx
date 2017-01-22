@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_bass</sound>
+    <sound>sound\snd_bass2</sound>
+    <sound>sound\snd_first1</sound>
+    <sound>sound\snd_first2</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_seagull</sprite>
     <sprite>sprites\spr_trash</sprite>
