@@ -1,6 +1,7 @@
 /// Seagull Eatting State
 
 obj_seagull.experience += obj_seagull.held_item.weight
+obj_seagull.weight += obj_seagull.held_item.weight
 
 Evo = false;
 

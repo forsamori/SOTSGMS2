@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// obj_pickup Init
 eatable = true;
+eaten = false;
 weight = 2;
 pickedUp = false;
 dropped = false;
@@ -61,10 +62,14 @@ points = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(i=0;i&lt;random_range(4, 7);i++)
+            <string>if(!eaten)
 {
-    instance_create(x, y, obj_shrapnel);
+    for(i=0;i&lt;random_range(4, 7);i++)
+    {   
+        instance_create(x, y, obj_shrapnel);
+    }
 }
+
 </string>
           </argument>
         </arguments>
@@ -117,8 +122,10 @@ if (falling == true)
     fallCounter++;
     if (fallCounter &gt;= 10)
     {
+        
         fallCounter = 0;
         falling = false;
+        instance_destroy();
     }
 }
 </string>
@@ -189,14 +196,18 @@ if (falling == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Colloision With Seagull while swooping
+            <string>/// Colloision With Seagull while swooping
 if (obj_seagull.swooping == true &amp;&amp; !obj_seagull.item_held)
 {
-    pickedUp = true;
-    other.item_held = true;
-    other.held_item = self;
-    show_debug_message("Picked up item");
+    if(obj_seagull.weight &gt;= self.weight)
+    {
+        pickedUp = true;
+        other.item_held = true;
+        other.held_item = self;
+        show_debug_message("Picked up item");
+    }
 }
+
 </string>
           </argument>
         </arguments>

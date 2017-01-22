@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 points = 500;
+weight = 10
 </string>
           </argument>
         </arguments>
@@ -59,6 +60,8 @@ obj_seagull.counter = 1;
 
 obj_seagull.score += points*obj_seagull.multiplier;
 show_debug_message(obj_seagull.score);
+
+scr_part_eating_play(x,y,50);
 </string>
           </argument>
         </arguments>

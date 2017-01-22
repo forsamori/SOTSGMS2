@@ -34,6 +34,9 @@
       <sprite>sprites\spr_hosue_03</sprite>
       <sprite>sprites\spr_house_04</sprite>
     </sprites>
+    <sprites name="terrain">
+      <sprite>sprites\spr_deep_water</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -63,6 +66,7 @@
       <script>scripts\scr_part_eating_init.gml</script>
       <scripts name="Play">
         <script>scripts\scr_part_blood_play.gml</script>
+        <script>scripts\scr_part_eating_play.gml</script>
       </scripts>
     </scripts>
     <scripts name="Buttons">
@@ -112,6 +116,7 @@
     <objects name="buildings">
       <object>objects\obj_house_00</object>
     </objects>
+    <object>objects\obj_terrain_deep_water</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>

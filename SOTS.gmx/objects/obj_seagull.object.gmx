@@ -44,6 +44,7 @@ item_held = false;
 
 // Sam A - Growing Varibles;
 experience = 0
+weight = 1;
 next_level_exp = 10
 level = 1
 size = 1
@@ -98,6 +99,8 @@ audio_play_sound(snd_first2, 0 , 1);
           <argument>
             <kind>1</kind>
             <string>/// Timer 2
+obj_seagull.evolving = false;
+obj_seagull.state = scr_seagull_move_state;
 </string>
           </argument>
         </arguments>
@@ -158,6 +161,36 @@ script_execute(state);
 //    move_towards_point(mouse_x,mouse_y,forward_speed);
 //    //Move forward
 //}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///THE RETURN OF HOVER ANGLE
+if(hover_mode)
+{
+    show_debug_message(path_position);
+    obj_seagull.image_angle = -path_position * 360;
+ }
+ else
+ {
+    obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
+ }
 </string>
           </argument>
         </arguments>
@@ -268,38 +301,6 @@ else
 {
     draw_self();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///THE RETURN OF HOVER ANGLE
-if(hover_mode)
-{
-    show_debug_message(path_position);
-    obj_seagull.image_angle = -path_position * 360;
- }
- else
- {
-    obj_seagull.image_angle = point_direction( obj_seagull.x,  obj_seagull.y, mouse_x, mouse_y);
- }
 </string>
           </argument>
         </arguments>
