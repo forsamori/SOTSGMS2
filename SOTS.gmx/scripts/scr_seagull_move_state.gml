@@ -21,7 +21,7 @@ if(obj_seagull.pdist <= 30 && fly_mode)
     show_debug_message(path_position);
     obj_seagull.image_angle = -path_position * 360;
 }
-else if(obj_seagull.pdist >= 120 && hover_mode)
+else if(obj_seagull.pdist >= 100 && hover_mode)
 {
     hover_mode = false;
     fly_mode = true;
