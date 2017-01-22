@@ -35,8 +35,12 @@ counter = 0;
 remaining_time = 0;
 
 //Animation frames
-ANIM_MOVE_START = 0
-ANIM_MOVE_END = 11 
+ANIM_LVL1_MOVE_START = 0
+ANIM_LVL1_MOVE_END = 11
+ANIM_LVL2_MOVE_START = 23
+ANIM_LVL2_MOVE_END = 37
+ANIM_LVL3_MOVE_START = 47
+ANIM_LVL3_MOVE_END = 59
 
 forward_speed = BASE_SPEED;
 swooping = false;
@@ -333,9 +337,26 @@ if (self.evolving)
 else
 {
     image_speed = 10/room_speed;
-    if (image_index &gt;= ANIM_MOVE_END)
+    if (level == 1)
     {
-        image_index = ANIM_MOVE_START;
+        if (image_index &gt;= ANIM_LVL1_MOVE_END)
+        {
+            image_index = ANIM_LVL1_MOVE_START;
+        }
+    }
+    else if (level == 2)
+    {
+        if (image_index &gt;= ANIM_LVL2_MOVE_END)
+        {
+            image_index = ANIM_LVL2_MOVE_START;
+        }
+    }
+    else if (level == 3)
+    {
+        if (image_index &gt;= ANIM_LVL3_MOVE_END)
+        {
+            image_index = ANIM_LVL3_MOVE_START;
+        }
     }
     draw_self();
 }

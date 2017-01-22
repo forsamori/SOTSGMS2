@@ -48,10 +48,10 @@ if(alarm_get(1) <= room_speed*4)
     switch(obj_seagull.level)
     {
         case 2:
-            obj_seagull.image_index = 1;
+            obj_seagull.image_index = obj_seagull.ANIM_LVL2_MOVE_START;
             break;
         case 3:
-            obj_seagull.image_index = 2;
+            obj_seagull.image_index = obj_seagull.ANIM_LVL3_MOVE_START;
             break;
         default:
             obj_seagull.image_index = 0;
