@@ -19,6 +19,8 @@
     <sound>sound\snd_fifth1</sound>
     <sound>sound\snd_sixth1</sound>
     <sound>sound\snd_spook1</sound>
+    <sound>sound\snd_explosion1</sound>
+    <sound>sound\snd_explosion2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="dropables">
@@ -54,8 +56,10 @@
       <sprite>sprites\spr_shallow_water</sprite>
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_deep_wave</sprite>
     </sprites>
     <sprite>sprites\words</sprite>
+    <sprite>sprites\spr_person</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test_</background>
@@ -171,6 +175,7 @@
     <room>rooms\rm_help_screen</room>
     <room>rooms\rm_credits</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_ending</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
