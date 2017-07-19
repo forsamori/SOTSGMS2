@@ -1,0 +1,164 @@
+Converting GML script : ${project_dir}\scripts\scr_seagull_swooping_state\scr_seagull_swooping_state.gml
+Converted description : /// @description  Seagull_swooping_state
+
+Converting GML script : ${project_dir}\scripts\scr_seagull_move_state\scr_seagull_move_state.gml
+Converted description : /// @description scr_seagull_move_state
+
+Converting GML script : ${project_dir}\scripts\scr_part_blood_play\scr_part_blood_play.gml
+Converted description : /// @description  scr_part_blood_play(x,y, number);/// @function  scr_part_blood_play
+/// @param x
+/// @param y
+/// @param  number
+
+Converting GML script : ${project_dir}\scripts\scr_get_input\scr_get_input.gml
+Converted description : /// @description scr_get_input
+
+Converting GML script : ${project_dir}\scripts\scr_growing\scr_growing.gml
+Converted builtin : line 32 : view_xport[0] = obj_view.width -> __view_set( e__VW.XPort, 0, obj_view.width )
+Converted builtin : line 33 : view_yport[0] = obj_view.height -> __view_set( e__VW.YPort, 0, obj_view.height )
+Converted description : /// @description  Growing Script
+
+Converting GML script : ${project_dir}\scripts\scr_seagull_evolving_state\scr_seagull_evolving_state.gml
+Converted builtin : line 11 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 11 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 38 : view_wview -= evo_hzoom -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) - (evo_hzoom) )
+Converted builtin : line 71 : view_wview[0] += (2*evo_hzoom) -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) + ((2*evo_hzoom)) )
+Converted builtin : line 12 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 12 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 37 : view_hview -= evo_vzoom -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) - (evo_vzoom) )
+Converted builtin : line 70 : view_hview[0] += (2*evo_vzoom) -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) + ((2*evo_vzoom)) )
+Converted description : /// @description  Where the seagull starts to evolve.
+
+Converting GML script : ${project_dir}\scripts\scr_falling_object\scr_falling_object.gml
+Converted description : /// @description  scr_falling_object(object)/// @function  scr_falling_object
+/// @param object
+
+Converting GML script : ${project_dir}\scripts\scr_seagull_dropping_state\scr_seagull_dropping_state.gml
+Converted description : /// @description  scr_dropping_state
+
+Converting GML script : ${project_dir}\scripts\scr_seagull_eat_state\scr_seagull_eat_state.gml
+Converted description : /// @description  Seagull Eatting State
+
+Converting GML script : ${project_dir}\scripts\scr_chance\scr_chance.gml
+Converted description : /// @description scr_chance(percentage)/// @function scr_chance
+/// @param percentage
+
+Converting GML script : ${project_dir}\objects\obj_view\Create_0.gml
+Converted description : /// @description  move to the seagull
+
+Converting GML script : ${project_dir}\objects\obj_view\Alarm_1.gml
+Converted description : /// @description  Alarm1
+
+Converting GML script : ${project_dir}\objects\obj_view\Step_0.gml
+Converted description : /// @description  Move towards the player by 10%
+
+Font Test_Selection_Font has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\scripts\scr_part_eating_play\scr_part_eating_play.gml
+Converted description : /// @description  scr_part_blood_play(x,y, number);/// @function  scr_part_blood_play
+/// @param x
+/// @param y
+/// @param  number
+
+Converting GML script : ${project_dir}\scripts\scr_exit_game\scr_exit_game.gml
+Converted description : /// @description exit game
+
+Font Test_Menu_Font has been converted to font family Arial (Regular). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\objects\obj_seagull\Create_0.gml
+Converted description : /// @description Initialize seagull
+
+Converting GML script : ${project_dir}\objects\obj_seagull\Alarm_1.gml
+Converted description : /// @description  Timer 2
+
+Converting GML script : ${project_dir}\objects\obj_seagull\Alarm_0.gml
+Converted description : /// @description  Alarm for Swooping
+
+Converting GML script : ${project_dir}\objects\obj_seagull\Step_0.gml
+Converted description : /// @description Seagull Movement
+
+Converting GML script : ${project_dir}\objects\obj_seagull\Draw_64.gml
+Converted description : /// @description Draw multiplier, score.
+
+Converting GML script : ${project_dir}\objects\obj_mainmenu_test\Create_0.gml
+Converted description : /// @description  Menu Test Object.
+Converted string : line 5 : 'Start' -> "Start"
+Converted string : line 6 : 'Quit' -> "Quit"
+
+Converting GML script : ${project_dir}\objects\obj_mainmenu_test\Step_0.gml
+Converted description : /// @description  Main Menu.
+
+Converting GML script : ${project_dir}\objects\obj_blood\Create_0.gml
+Converted description : /// @description Select random blood frame
+
+Converting GML script : ${project_dir}\objects\obj_pickup\Create_0.gml
+Converted description : /// @description  obj_pickup Init
+
+Converting GML script : ${project_dir}\objects\obj_pickup\Step_0.gml
+Converted description : /// @description  pickup_Update
+
+Converting GML script : ${project_dir}\objects\obj_pickup\Collision_3c147c14-bf04-46f5-a85c-ed460fcdf1a3.gml
+Converted description : /// @description  Colloision With Seagull while swooping
+
+Converting GML script : ${project_dir}\objects\obj_pedestrian\Step_0.gml
+Converted description : /// @description leave path
+
+Converting GML script : ${project_dir}\objects\obj_button_parent\Mouse_4.gml
+Converted description : /// @description Call the button action
+
+Converting GML script : ${project_dir}\objects\obj_ps\Step_0.gml
+Converted description : /// @description Emit The particals
+
+Converting GML script : ${project_dir}\objects\obj_highscore_board\Create_0.gml
+Converted string : line 3 : "\HighscoreBoard.txt" -> "\\HighscoreBoard.txt"
+Converted string : line 6 : "\HighscoreBoard.txt" -> "\\HighscoreBoard.txt"
+
+Converting GML script : ${project_dir}\objects\obj_highscore_board\Step_0.gml
+Converted string : line 8 : "\HighscoreBoard.txt" -> "\\HighscoreBoard.txt"
+
+Converting GML script : ${project_dir}\objects\obj_highscore_board\Draw_64.gml
+Converted description : /// @description draw high score
+
+Converting GML script : ${project_dir}\objects\obj_black_out\Create_0.gml
+Converted description : /// @description  Init Blackout to have alpha
+
+Converting GML script : ${project_dir}\objects\obj_terrain_deep_water\Collision_5d13ea43-35d9-46d5-9aff-49fc733744fb.gml
+Converted description : /// @description  if its falling counter == 0;
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit.
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2.
+Converting GML script : ${project_dir}\objects\obj_wave\Step_0.gml
+Converted string : line 1 : 'Q' -> "Q"
+Converted string : line 2 : 'A' -> "A"
+Converted string : line 4 : 'W' -> "W"
+Converted string : line 5 : 'S' -> "S"
+Converted string : line 7 : 'E' -> "E"
+Converted string : line 8 : 'D' -> "D"
+
+Converting GML script : ${project_dir}\objects\obj_wave\Draw_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+no audiogroup for sound: snd_bass - setting to default audio group.
+no audiogroup for sound: snd_bass2 - setting to default audio group.
+no audiogroup for sound: snd_first1 - setting to default audio group.
+no audiogroup for sound: snd_second3 - setting to default audio group.
+no audiogroup for sound: snd_first2 - setting to default audio group.
+no audiogroup for sound: snd_third2 - setting to default audio group.
+no audiogroup for sound: snd_second1 - setting to default audio group.
+no audiogroup for sound: snd_fifth1 - setting to default audio group.
+no audiogroup for sound: snd_sixth1 - setting to default audio group.
+no audiogroup for sound: snd_third1 - setting to default audio group.
+no audiogroup for sound: snd_fourth1 - setting to default audio group.
+no audiogroup for sound: snd_second2 - setting to default audio group.
+no audiogroup for sound: snd_explosion2 - setting to default audio group.
+no audiogroup for sound: snd_second4 - setting to default audio group.
+no audiogroup for sound: snd_explosion1 - setting to default audio group.
+no audiogroup for sound: snd_spook1 - setting to default audio group.
+game speed set to 30
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml
